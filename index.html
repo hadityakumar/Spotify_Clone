@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="utility.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+
+    <title>Spotify - Web Player: Music for everyone</title>
+</head>
+
+<body>
+    <div class="container flex bg-black">
+        <div class="left bg-black">
+            <img class="cross" src="icons/cross.svg" alt="close">
+            <div class="home bg-grey m-1 p-1 rounded">
+                <div class="logo"><img class="invert" src="icons/logo.svg" alt="Home"></div>
+                <ul>
+                    <li><img class="invert" src="icons/home.svg" alt="Home">Home</li>
+                    <li><img class="invert" src="icons/search.svg" alt="Search">Search</li>
+                </ul>
+            </div>
+            <div class="library rounded bg-grey m-1 p-2">
+                <div class="heading"><img id="lib-icon" class="invert" src="icons/lib.svg" alt="Library">
+                    <h2>Your Library</h2>
+                </div>
+
+                <div class="songsList">
+                    <ul>
+
+                    </ul>
+                </div>
+
+                <div class="footer">
+                    <div><a href="https://www.spotify.com/in-en/legal/"><span>Legal</span></a></div>
+                    <div><a href="https://www.spotify.com/in-en/safetyandprivacy/"><span>Safety &amp; Privacy
+                                Center</span></a></div>
+                    <div><a href="https://www.spotify.com/in-en/legal/privacy-policy/"><span>Privacy Policy</span></a>
+                    </div>
+                    <div><a href="https://www.spotify.com/in-en/legal/cookies-policy/"><span>Cookies</span></a>
+                    </div>
+                    <div><a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3"><span>About Ads</span></a>
+                    </div>
+                    <div><a href="https://www.spotify.com/in-en/accessibility/"><span>Accessibility</span></a></div>
+                </div>
+            </div>
+        </div>
+        <div class="right bg-black bg-grey rounded">
+
+            <div class="header rounded">
+                <div class="navbar rounded">
+
+                    <div class="arrows">
+                        <img id="burger" class="burger" src="icons/burger.svg" alt="menu">
+                        <img class="invert" src="icons/left.svg" alt="left">
+                        <img class="invert" src="icons/right.svg" alt="right">
+                    </div>
+                    <div class="loginButtons">
+                        <button class="signupbtn">Sign up</button>
+                        <button class="loginbtn">Log In</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="spotifyPlaylists">
+                <h1>Spotify Playlists</h1>
+
+                <div class="cardContainer">
+
+
+
+                
+
+                </div>
+
+            </div>
+
+            <div class="playbar">
+                <div class="songinfo">Track</div>
+                <div class="playbuttons">
+                    <img id="prevbutton" class="invert" src="icons/playleft.svg" alt="">
+                    <img id="playbutton" class="invert" src="icons/play.svg" alt="">
+                    <img id="nextbutton" class="invert" src="icons/playright.svg" alt="">
+                </div>
+
+                <div id="songduration" class="songtime">00:00/00:00</div>
+
+                <div class="volumebutton">
+                    <img id="volume" src="icons/highvol.svg" alt="volume">
+                </div>
+
+                <div class="volbar">
+                    <div id="volcircle" class="circle"></div>
+                </div>
+
+
+                <div class="seekbar">
+                    <div id="circle" class="circle"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
